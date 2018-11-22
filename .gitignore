@@ -1,0 +1,6 @@
+# IntelliJ project files
+*.iml
+out
+.idea
+desktop.png
+info.txt
