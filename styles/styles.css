@@ -1,13 +1,10 @@
 body {
-    min-height: 750px;
-    min-width: 500px;
-    background-color: #DEDEDE;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
 }
 
 .contact-form-modal-wrapper {
+    background-color: #DEDEDE;
+    align-items: center;
     display: flex;
     flex: 1;
     padding: 50px;
@@ -17,13 +14,14 @@ body {
 
 .contact-form-modal {
     display: flex;
-    flex: 1;
     position: relative;
     background-color: #ffffff;
-    max-width: 800px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 800px;
     min-width: 320px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    /*to del after setting width for inputs?*/
     justify-content: center;
     align-items: center;
     padding: 90px 70px;
@@ -77,6 +75,10 @@ body {
     padding: 15px;
     font-size: 16px;
     margin-bottom: 20px;
+    width:100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 .contact-form-modal .user-name,
@@ -106,8 +108,7 @@ body {
 .pretty-form:active,
 .pretty-form:focus {
     outline: none !important;
-    border:1px solid #FC4D5E;
-    box-shadow: 0 0 10px #FC4D5E;
+    border: 2px solid #FC4D5E;
 }
 
 .buttons-container {
@@ -121,11 +122,13 @@ body {
     background-color: #FC4D5E;
     font-size: 18px;
     color: #ffffff;
-    cursor:pointer;
+    cursor: pointer;
+    border: none;
 }
 
 .send-form-button:active,
 .send-form-button:focus {
     background-color: red;
     outline: none;
+    border: none;
 }
